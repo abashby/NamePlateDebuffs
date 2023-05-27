@@ -72,7 +72,7 @@ namespace NamePlateDebuffs.StatusNode
 
             StatusNodeGroup group = NodeGroups[groupIndex];
 
-            group?.SetStatus(statusIndex, row.Icon, timer);
+            group?.SetStatus(statusIndex, (int)row.Icon, timer);
         }
 
         public void HideUnusedStatus(int groupIndex, int statusCount)
